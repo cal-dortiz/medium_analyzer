@@ -11,7 +11,7 @@ from langchain_core.runnables import RunnablePassthrough
 
 load_dotenv()
 
-def format_documents(docs):
+def format_docs(docs):
     return "\n\n".join(doc.page_content for doc in docs)
 
 if __name__ == '__main__':
